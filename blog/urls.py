@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import  #Inserir nome das views criadas#
+from .views import  index, golpes, envio, dicas
 
 
 urlpatterns = [
