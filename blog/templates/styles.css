@@ -82,7 +82,6 @@ header .menu ul li {
 .principal-artigo {
     width: 900px;
     margin: 50px 200px 100px 75px;
-    display: flex;
 }
 
 .principal-imag {
@@ -125,11 +124,6 @@ button:hover {
     display: inline-block;
 }
 
-.dicas-artigo {
-    width: 200px;
-    height: 200px;
-}
-
 .dicas-card {
     padding: 10px;
     margin: 0 0 25px;
@@ -144,7 +138,7 @@ button:hover {
 }
 
 .p-dicas {
-    width: auto;
+    width: 300px;
     height: auto;
 }
 
@@ -160,7 +154,19 @@ button:hover {
     font-family: 'Quicksand', sans-serif;
 }
 
-.principal-artigo {
+#conteiner {
     display: grid;
-    grid-template-columns: 1fr 300px
+    grid-template-columns: 1fr 650px;
+    margin: 10px;
+}
+
+.dicas-card {
+    border-radius: 20px;
+    padding: 10px;
+    margin: 50px 100px auto;
+    background-color: #f1eee5;
+}
+
+.h2-dicas {
+    width: 300px;
 }
