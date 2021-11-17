@@ -125,12 +125,12 @@ button:hover {
     display: inline-block;
 }
 
-.dica-artigo {
+.dicas-artigo {
     width: 200px;
     height: 200px;
 }
 
-.dica-card {
+.dicas-card {
     padding: 10px;
     margin: 0 0 25px;
     border-radius: 20px;
@@ -138,7 +138,7 @@ button:hover {
     height: 400px;
 }
 
-.dica-imag {
+.dicas-imag {
     width: 300px;
     height: 300px;
 }
@@ -158,4 +158,9 @@ button:hover {
     font-size: 20px;
     border: 0;
     font-family: 'Quicksand', sans-serif;
+}
+
+.principal-artigo {
+    display: grid;
+    grid-template-columns: 1fr 300px
 }
