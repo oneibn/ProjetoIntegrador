@@ -91,11 +91,11 @@ header .menu ul li {
     border-radius: 20px 20px 0 0;
 }
 
-p {
+.p-principal {
     margin: 0 0 25px 0;
 }
 
-button {
+.botão-artigo {
     margin: 10px 0 20px 700px;
     display: flex;
     background: #C7DBFF;
@@ -122,4 +122,40 @@ button:hover {
     flex-direction: column;
     align-content: stretch;
     align-items: flex-start;
+    display: inline-block;
+}
+
+.dica-artigo {
+    width: 200px;
+    height: 200px;
+}
+
+.dica-card {
+    padding: 10px;
+    margin: 0 0 25px;
+    border-radius: 20px;
+    width: 400px;
+    height: 400px;
+}
+
+.dica-imag {
+    width: 300px;
+    height: 300px;
+}
+
+.p-dicas {
+    width: auto;
+    height: auto;
+}
+
+.botão-dicas {
+    margin: 5px 0 10px 100px;
+    display: flex;
+    background: #C7DBFF;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: #000000;
+    font-size: 20px;
+    border: 0;
+    font-family: 'Quicksand', sans-serif;
 }
