@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Golpes digitais</title>
+    <title>Golpes digitais - Envios</title>
 
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="styles.css">
@@ -22,6 +22,10 @@
                 <li class="menu-nav"><a href="dicas.html">Dicas</a></li>
                 <li class="menu-nav"><a href="#sobre">Sobre</a></li>
             </ul>
+            <div id="divBusca">
+                <input type="text" id="txtBusca" placeholder="Buscar..." />
+                <img src="search.png" id="btnBusca" alt="Buscar" />
+            </div>
         </nav>
 
         <section id="card-artigo" class="card-artigo">
@@ -46,3 +50,37 @@
                 </div>
             </div>
         </section>
+
+        <section>
+            <h1>Conhece um novo golpe? Compartilhe com nossa rede e mantenha todos informados.
+            </h1>
+
+            <main>
+                <form>
+                    <label for="nomesobrenome">Nome e sobrenome</label>
+                    <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                    <label for="telefone">Assunto</label>
+                    <input type="tel" id="assunto" class="input-padrao" required>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+                    <input type="submit" value="Enviar" class="enviar">
+                </form>
+            </main>
+        </section>
+        <footer>
+            <section class="sobre">
+                <h2 class="sobre-h2">Sobre Nós</h2>
+                <p class="sobre-p">Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget, sodales tellus eveniet possimus. Iure dolorum lectus varius ipsum repudiandae! Iure congue
+                    excepteur. Magna dis m</p>
+                <p class="copyright">&copy; Copyright Vulnerabilidade Digital- 2021</p>
+        </footer>
+    </header>
+</body>
+
+</html>
