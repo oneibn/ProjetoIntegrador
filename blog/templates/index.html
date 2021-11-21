@@ -1,114 +1,198 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Golpes digitais</title>
 
+    <title>Golpes digitais</title>
     <script src="https://unpkg.com/feather-icons"></script>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
     <header>
-        <nav class="menu">
+        <nav>
             <ul>
-                <li class="menu-nav"><a href="index.html">Home</a></li>
-                <li class="menu-nav"><a href="envio.html">Envios</a></li>
-                <li class="menu-nav"><a href="golpes.html">Golpes</a></li>
-                <li class="menu-nav"><a href="dicas.html">Dicas</a></li>
-                <li class="menu-nav"><a href="#sobre">Sobre</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="envio.html">Envios</a></li>
+                <li><a href="comentarios.html">Comentários</a></li>
+                <li><a href="dicas.html">Dicas</a></li>
+                <li><a href="#sobre">Sobre</a></li>
             </ul>
+
             <div id="divBusca">
                 <input type="text" id="txtBusca" placeholder="Buscar..." />
                 <img src="search.png" id="btnBusca" alt="Buscar" />
             </div>
         </nav>
 
-        <section id="card-artigo" class="card-artigo">
-            <div id="home-card" class="card-scroll">
-                <div class="card">
-                    <a href="Artigo1"><img class="card-imag" src="Artigo1.jpg" alt="Artigo"></a>
+
+
+        <div id="home" class="header-content">
+            <h1>Vulnerabilidade digital</h1>
+            <p>Vanha se informar.</p>
+            <button><a href="comentarios.html">Saiba mais</a></button>
+        </div>
+    </header>
+
+    <section id="card-artigo" class="card-artigo">
+        <div id="home-card" class="card-scroll">
+            <div class="card">
+                <a href="Artigo1"><img class="card-imag" src="Artigo1.jpg" alt="Artigo"></a>
+            </div>
+            <div class="card">
+                <a href="Artigo2"><img class="card-imag" src="Artigo2.png" alt="Artigo"></a>
+            </div>
+            <div class="card">
+                <a href="Artigo3"><img class="card-imag" src="Artigo3.png" alt="Artigo"></a>
+            </div>
+            <div class="card">
+                <a href="Artigo4"><img class="card-imag" src="Artigo4.png" alt="Artigo"></a>
+            </div>
+            <div class="card">
+                <a href="Artigo5"><img class="card-imag" src="Artigo5.jpg" alt="Artigo"></a>
+            </div>
+            <div class="card">
+                <a href="Artigo6"><img class="card-imag" src="Artigo6.jpg" alt="Artigo"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="dicas" class="dicas">
+
+        <h2 class="dicas-title">Confira nossas dicas para não cair em golpes</h2>
+
+        <div class="dicas-cards">
+
+            <div class="card">
+
+                <div class="card-tag card-tag-top">
+                    <p>Dicas</p>
                 </div>
-                <div class="card">
-                    <a href="Artigo2"><img class="card-imag" src="Artigo2.png" alt="Artigo"></a>
+
+                <img class="card-imag" src="lgpd.png" alt="miami">
+
+                <div class="card-content">
+                    <h2>Novos golpes aplicados pela internet</h2>
+                    <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget...</p>
+
+                    <button><a href="dicas.html">Saiba mais</a></button>
+
                 </div>
-                <div class="card">
-                    <a href="Artigo3"><img class="card-imag" src="Artigo3.png" alt="Artigo"></a>
+
+            </div>
+
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <p>Dicas</p>
                 </div>
-                <div class="card">
-                    <a href="Artigo4"><img class="card-imag" src="Artigo4.png" alt="Artigo"></a>
+
+                <img class="card-imag" src="seguranca.jpg" alt="russia">
+
+                <div class="card-content">
+                    <h2>Novos golpes aplicados pela internet</h2>
+                    <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget...</p>
+
+                    <button><a href="dicas.html">Saiba mais</a></button>
+
                 </div>
-                <div class="card">
-                    <a href="Artigo5"><img class="card-imag" src="Artigo5.jpg" alt="Artigo"></a>
+
+            </div>
+
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <p>Dicas</p>
                 </div>
-                <div class="card">
-                    <a href="Artigo6"><img class="card-imag" src="Artigo6.jpg" alt="Artigo"></a>
+
+                <img class="card-imag" src="lgpd2.png" alt="Lençóis Maranhenses">
+
+                <div class="card-content">
+                    <h2>Novos golpes aplicados pela internet</h2>
+                    <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget...</p>
+
+                    <button><a href="dicas.html">Saiba mais</a></button>
+
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <main id="conteiner">
-            <section id="principal-artigo" class="principal-artigo">
-                <div class="principal-card">
-                    <div class="principal">
-                        <a href="Artigo6"><img class="principal-imag" src="Artigo6.jpg" alt="Artigo"></a>
-                        <h2>Novos golpes aplicados pela internet</h2>
-                        <p class="p-principal">Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget, sodales tellus eveniet possimus. Iure dolorum lectus varius ipsum repudiandae! Iure
-                            congue excepteur. Magna dis magni quasi egestas, repudiandae doloribus maxime minima. Repellat natus venenatis eget fugiat lectus. Aliquet tincidunt netus reiciendis occaecat laoreet? Taciti hac? Aspernatur, ultricies, eu consectetuer,
-                            non proin ducimus similique duis, diamlorem, parturient ipsam? Felis curae! Etiam eveniet dis. Laudantium sunt provident, class mus ligula ornare accusantium magnam. Nisl eu nemo laudantium, veniam, fames expedita, facere lobortis
-                            non? </p>
-                        <button class="botão-artigo">Leia mais</button>
-                    </div>
-
-
-
-                    <div class="principal">
-                        <a href="Artigo4"><img class="principal-imag" src="Artigo4.png" alt="Artigo"></a>
-                        <h2>Novos golpes aplicados pela internet</h2>
-                        <p class="p-principal">Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget, sodales tellus eveniet possimus. Iure dolorum lectus varius ipsum repudiandae! Iure
-                            congue excepteur. Magna dis magni quasi egestas, repudiandae doloribus maxime minima. Repellat natus venenatis eget fugiat lectus. Aliquet tincidunt netus reiciendis occaecat laoreet? Taciti hac? Aspernatur, ultricies, eu consectetuer,
-                            non proin ducimus similique duis, diamlorem, parturient ipsam? Felis curae! Etiam eveniet dis. Laudantium sunt provident, class mus ligula ornare accusantium magnam. Nisl eu nemo laudantium, veniam, fames expedita, facere lobortis
-                            non? </p>
-                        <button class="botão-artigo">Leia mais</button>
-                    </div>
-
-
+    <section id="golpes" class="golpes">
+        <h2 class="golpes-title">Comentários recentes.</h2>
+        <div class="golpes-cards">
+            <div class="card">
+                <i data-feather="message-circle"></i>
+                <div class="card-content">
+                    <h3>Novos golpes aplicados pela internet</h3>
+                    <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget, sodales tellus eveniet possimus. Iure dolorum lectus varius ipsum repudiandae! Iure congue
+                        excepteur. Magna dis magni quasi egestas, repudiandae doloribus maxime minima. Repellat natus venenatis eget fugiat lectus. Aliquet tincidunt netus reiciendis occaecat laoreet? Taciti hac? Aspernatur, ultricies, eu consectetuer,
+                        non proin ducimus similique duis, diamlorem, parturient ipsam? </p>
                 </div>
-            </section>
+                <button><a href="comentarios.html">Saiba mais</a></button>
+            </div>
 
-            <section class="dicas-artigo">
-                <div class="dicas-card">
-                    <div class="dicas">
-                        <a href="lgpd"><img class="dicas-imag" src="lgpd.png" alt="LGPD"></a>
-                        <h2 class="h2-dicas">Novos golpes aplicados pela internet</h2>
-                        <p class="p-dicas">Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget, sodales tellus eveniet possimus. Iure dolorum lectus varius ipsum repudiandae! Iure
-                            congue excepteur. Magna dis magni quasi egestas, repudiandae doloribus maxime minima. Repellat natus venenatis eget fugiat lectus. </p>
-                        <button class="botão-dicas">Leia mais</button>
-                    </div>
-                    <div class="dicas">
-                        <a href="seguranca"><img class="dicas-imag" src="seguranca.jpg" alt="Segurança de dados"></a>
-                        <h2 class="h2-dicas">Novos golpes aplicados pela internet</h2>
-                        <p class="p-dicas">Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget, sodales tellus eveniet possimus. Iure dolorum lectus varius ipsum repudiandae! Iure
-                            congue excepteur. Magna dis magni quasi egestas, repudiandae doloribus maxime minima. Repellat natus venenatis eget fugiat lectus. </p>
-                        <button class="botão-dicas">Leia mais</button>
-                    </div>
+            <div class="card">
+                <i data-feather="message-circle"></i>
+                <div class="card-content">
+                    <h3>Novos golpes aplicados pela internet</h3>
+                    <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget, sodales tellus eveniet possimus. Iure dolorum lectus varius ipsum repudiandae! Iure congue
+                        excepteur. Magna dis magni quasi egestas, repudiandae doloribus maxime minima. Repellat natus venenatis eget fugiat lectus. Aliquet tincidunt netus reiciendis occaecat laoreet? Taciti hac? Aspernatur, ultricies, eu consectetuer,
+                        non proin ducimus similique duis, diamlorem, parturient ipsam? </p>
                 </div>
-            </section>
-        </main>
+                <button><a href="comentarios.html">Saiba mais</a></button>
+            </div>
 
-        <footer>
-            <section class="sobre">
-                <h2 class="sobre-h2">Sobre Nós</h2>
-                <p class="sobre-p">Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget, sodales tellus eveniet possimus. Iure dolorum lectus varius ipsum repudiandae! Iure congue
-                    excepteur. Magna dis m</p>
-                <p class="copyright">&copy; Copyright Vulnerabilidade Digital- 2021</p>
-        </footer>
+            <div class="card">
+                <i data-feather="message-circle"></i>
+                <div class="card-content">
+                    <h3>Novos golpes aplicados pela internet</h3>
+                    <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget, sodales tellus eveniet possimus. Iure dolorum lectus varius ipsum repudiandae! Iure congue
+                        excepteur. Magna dis magni quasi egestas, repudiandae doloribus maxime minima. Repellat natus venenatis eget fugiat lectus. Aliquet tincidunt netus reiciendis occaecat laoreet? Taciti hac? Aspernatur, ultricies, eu consectetuer,
+                        non proin ducimus similique duis, diamlorem, parturient ipsam? </p>
+                </div>
+                <button><a href="comentarios.html">Saiba mais</a></button>
+            </div>
+        </div>
 
-    </header>
+    </section>
+
+    <section id="contatos" class="contato">
+        <div class="contato-card" id="scrolling-box">
+            <h4>
+                <section id="sobre">Sobre nós</section>
+            </h4>
+            <ul>
+                <li><i data-feather="book"></i>Projeto Integrador</li>
+                <li><i data-feather="home"></i>Polo Tecnologico Sorocaba</li>
+                <li><i data-feather="users"></i>110-0018</li>
+
+            </ul>
+            </ul>
+            </ul>
+
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d117111.67099693531!2d-47.50683059089142!3d-23.469851360920426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58abceb48f503%3A0x947f99ac59d0781b!2sSorocaba%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1637523593188!5m2!1spt-BR!2sbr"
+            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+    </section>
+
+    <script>
+        feather.replace();
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
