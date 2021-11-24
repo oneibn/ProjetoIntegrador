@@ -21,11 +21,11 @@ def envio(request):
     return render(request, 'envio.html', context)
   
   
-def golpes(request):
+def comentarios(request):
     context = {
          
     }
-    return render(request, 'golpes.html', context)
+    return render(request, 'comentarios.html', context)
   
   
 def dicas(request):
