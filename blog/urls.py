@@ -1,10 +1,10 @@
 from django.urls import path
-from .views import  index, golpes, envio, dicas
+from .views import  index, comentarios, envio, dicas
 
 
 urlpatterns = [
     path('', index, name='index'),
-    path('golpes/', golpes, name='golpes'),
+    path('comentarios/', comentarios, name='comentarios'),
     path('envio/', envio, name='envio'),
     path('dicas/', dicas, name='dicas'),
 ]
