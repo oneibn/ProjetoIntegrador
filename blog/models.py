@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 
 
-class Post(model.Model):
+class Post(models.Model):
     nome = models.CharField(label='Nome', max_length=100)
     assunto = models.CharField(label='Assunto', max_length=100)
     email = models.EmailField(label='E-mail', max_length=100)
