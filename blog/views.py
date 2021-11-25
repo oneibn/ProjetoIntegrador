@@ -3,7 +3,6 @@ from django.contrib import messages
 from django.shortcuts import redirect
 
 from .models import Post
-from .forms import Comentarios
 
 # Utilizei function class based views, talvez mudar para class based views
 
@@ -15,9 +14,9 @@ def index(request):
 
 
 def envio(request):
-    form = Comentarios()
+  
     context = {
-         'form': form
+         
     }
     return render(request, 'envio.html', context)
   
