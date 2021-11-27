@@ -1,537 +1,528 @@
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: 'Quicksand', sans-serif;
-    width: 100vw;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-button {
-    padding: 10px 15px;
-    border-radius: 8px;
-    font-weight: bold;
-    border: 0;
-    background: #C7DBFF;
-    color: #000000;
-    font-family: 'Quicksand', sans-serif;
-}
-
-header {
-    height: 420px;
-    background: rgba(26, 77, 168, 0.57);
-    border-radius: 0px 0px 0px 500px;
-}
-
-header nav {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 30px
-}
-
-header nav p {
-    font-weight: bold;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-header nav ul li {
-    margin: 25px 35px 5px;
-    background: #C7DBFF;
-    border-radius: 20px;
-    padding: 15px;
-    color: #000000;
-    font-size: 24px;
-    padding: 3px 55px;
-}
-
-.header-content {
-    max-width: 400px;
-    margin: auto;
-    text-align: center;
-}
-
-.header-content h1 {
-    margin-bottom: 10px;
-    color: #000000;
-    font-size: 4rem;
-    display: flex;
-    justify-content: center;
-}
-
-#divBusca {
-    display: flex;
-    margin: auto;
-    border: solid 1px;
-    border-color: #000000;
-    border-radius: 15px;
-    width: 300px;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#txtBusca {
-    float: left;
-    background-color: transparent;
-    padding-left: 5px;
-    font-style: italic;
-    font-size: 18px;
-    border: none;
-    height: 32px;
-    width: 260px;
-}
-
-.dicas {
-    background: #f3efe8;
-    padding: 15px;
-}
-
-.dicas .dicas-cards {
-    display: flex;
-    margin: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.dicas .dicas-title {
-    width: 100%;
-    margin: 25px 0;
-    text-align: center;
-}
-
-.dicas .card {
-    width: 250px;
-    height: 460px;
-    background: white;
-    border-radius: 24px 0px;
-    margin: 45px;
-    position: relative;
-}
-
-.dicas .card-imag {
-    width: 225px;
-    height: 200px;
-    border-radius: 24px 0 0 0;
-    object-fit: cover;
-}
-
-.dicas .card-content {
-    padding: 0 15px;
-}
-
-.dicas .card-content ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
-}
-
-.dicas .card-content ul li {
-    font-size: 0.8em;
-    display: flex;
-    align-items: center;
-    margin: 3px 0;
-    color: gray;
-    font-weight: bold;
-}
-
-.dicas .card-content li svg {
-    width: 18px;
-    height: 18px;
-    margin-right: 10px;
-}
-
-.dicas .card-content h2 {
-    font-size: 1em;
-}
-
-.dicas .card .card-tag-top {
-    position: absolute;
-    right: 0;
-    top: 15px;
-    background: #F5DCA6;
-    border-radius: 8px 0 0 8px;
-    padding: 5px 10px;
-}
-
-.dicas .card .card-tag-bottom {
-    position: absolute;
-    left: 0;
-    top: 160px;
-    background: #A76D60;
-    border-radius: 0 8px 8px 0;
-    padding: 5px 10px;
-}
-
-.dicas .card .card-tag p {
-    margin: 0;
-    font-size: .8em;
-    color: white;
-    font-weight: bold;
-}
-
-.card-imag {
-    width: 300px;
-    height: 150px;
-    display: flex;
-    margin: 10px;
-    border-radius: 30px;
-}
-
-.card-artigo .card-scroll {
-    display: flex;
-    margin-left: 10px;
-    justify-content: flex-start;
-    overflow-x: scroll;
-}
-
-*::-webkit-scrollbar {
-    width: 3px;
-}
-
-*::-webkit-scrollbar-track {
-    background: #ffffff;
-}
-
-*::-webkit-scrollbar-thumb {
-    background-color: #f1eee5;
-    border-radius: 10px;
-    border: 5px solid #ffffff;
-}
-
-.golpes {
-    padding: 15px;
-}
-
-.golpes .golpes-title {
-    text-align: center;
-    margin: 10px 0;
-}
-
-.golpes .golpes-cards {
-    padding: 25px;
-    display: flex;
-    max-width: 950px;
-    justify-content: center;
-    margin: auto;
-    flex-wrap: wrap;
-}
-
-.golpes .card {
-    width: 550px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 25px 50px;
-}
-
-.golpes .card svg {
-    width: 60px;
-    height: 60px;
-    margin: 10px;
-    transition: all 1s;
-}
-
-.golpes .card svg:hover {
-    stroke: #F5DCA6;
-    transform: scale(1.1);
-}
-
-.golpes .card h3 {
-    font-weight: bold;
-}
-
-.golpes .card p {
-    font-size: .8rem;
-    color: #601700;
-    text-align: center;
-}
-
-.golpes .card .card-content {
-    height: 180px;
-    text-align: center;
-}
-
-.contato {
-    padding: 60px;
-    background: #f3efe8;
-    position: relative;
-}
-
-.contato .contato-card {
-    width: 300px;
-    height: 300px;
-    background: white;
-    position: absolute;
-    z-index: 99;
-    top: calc(50% - 150px);
-    left: calc(20% - 175px);
-    border-radius: 8px;
-    text-align: center;
-    color: rgba(26, 77, 168, 0.57);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
-}
-
-.contato .contato-card h4 {
-    padding-left: 50px;
-    text-align: left;
-}
-
-.contato .contato-card li {
-    font-size: .9rem;
-    font-weight: bold;
-    color: rgba(26, 77, 168, 0.57);
-    display: flex;
-    align-items: center;
-}
-
-.contato .contato-card li svg {
-    width: 16px;
-    margin: 10px;
-}
-
-
-/*Página envio*/
-
-main {
-    width: 940px;
-    margin: 0 auto;
-}
-
-form {
-    margin: 40px 0;
-}
-
-.envio {
-    display: flex;
-    justify-content: center;
-}
-
-form label,
-form legend {
-    display: block;
-    font-size: 20px;
-    margin: 0 0 10px;
-}
-
-.input-padrao {
-    display: block;
-    margin: 0 0 20px;
-    padding: 10px 25px;
-    width: 50%;
-}
-
-.enviar {
-    width: 15%;
-    padding: 15px 0;
-    margin: 25px 0 25px;
-    background: #F5DCA6;
-    color: #000000;
-    font-weight: bold;
-    font-size: 18px;
-    border: none;
-    border-radius: 15px;
-    transition: 1s all;
-    cursor: pointer;
-}
-
-
-/*Página Comentarios*/
-
-.golpes-comentario {
-    padding: 25px;
-    display: flex;
-    max-width: 950px;
-    justify-content: center;
-    margin: auto;
-    flex-wrap: wrap;
-}
-
-.card-golpes {
-    width: 900px;
-    height: 450px;
-    border-radius: 20px 20px 0 0;
-}
-
-#p-principal {
-    margin: 0 0 25px 0;
-    font-size: 20px;
-}
-
-.comentario .card-c {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 5px 100px;
-}
-
-
-/*Página Dicas*/
-
-.pagina-dicas {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.dicas-imag {
-    width: 300px;
-    right: 500px;
-    margin: 30px;
-}
-
-.card-dicas {
-    margin: 25px;
-}
-
-.dicas-p {
-    width: 400px;
-}
-
-.dicas-b {
-    margin: 25px 125px;
-}
-
-h2 {
-    font-size: 20px;
-    text-align: center;
-}
-
-
-/*RESPONSIVIDADE*/
-
-
-/*Especial para mapa*/
-
-@media (max-width: 950px) {
-    .contato {
-        padding: 60px 0;
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap');
+    * {
+        box-sizing: border-box;
     }
-    .contato .contato-card {
-        left: 40px;
-    }
-}
-
-@media (max-width: 800px) {
-    .contato {
-        padding: 30px 0;
-    }
-    .contato .contato-card {
-        position: static;
-        margin: 40px auto;
-    }
-}
-
-
-/*Tablets*/
-
-@media (max-width: 767px) {
-    header {}
-    .header-content h1 {
-        font-size: 100%;
-    }
-}
-
-
-/*Celular*/
-
-@media (max-width: 480px) {
+    
     body {
-        padding: auto;
-    }
-    header {
-        height: 210px;
-        border-radius: 0 60px;
-    }
-    .header-content h1 {
-        font-size: 100%;
-        margin: 20px 0 10px;
-    }
-    .card-imag {
-        width: 200px;
-        height: 100px;
-    }
-    header nav {
         margin: 0;
+        font-family: 'Quicksand', sans-serif;
+        width: 100vw;
     }
+    
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    
+    button {
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-weight: bold;
+        border: 0;
+        background: #C7DBFF;
+        color: #000000;
+        font-family: 'Quicksand', sans-serif;
+    }
+    
+    header {
+        height: 420px;
+        background: rgba(26, 77, 168, 0.57);
+        border-radius: 0px 0px 0px 500px;
+    }
+    
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 30px
+    }
+    
+    header nav p {
+        font-weight: bold;
+    }
+    
     header nav ul {
-        padding: 0px;
         list-style: none;
         display: flex;
-        align-items: center;
     }
+    
     header nav ul li {
-        margin: 5px;
+        margin: 25px 35px 5px;
         background: #C7DBFF;
         border-radius: 20px;
         padding: 15px;
         color: #000000;
-        font-size: 17px;
-        padding: 3px;
+        font-size: 24px;
+        padding: 3px 55px;
     }
-    header nav p {
-        width: 100%;
+    
+    .header-content {
+        max-width: 400px;
+        margin: auto;
         text-align: center;
     }
-    #divBusca {
-        position: absolute;
-        margin: 60px 40px;
-        width: 300px;
-        height: 25px;
+    
+    .header-content h1 {
+        margin-bottom: 10px;
+        color: #000000;
+        font-size: 4rem;
+        display: flex;
+        justify-content: center;
     }
+    
+    #divBusca {
+        display: flex;
+        margin: auto;
+        border: solid 1px;
+        border-color: #000000;
+        border-radius: 15px;
+        width: 300px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    #txtBusca {
+        float: left;
+        background-color: transparent;
+        padding-left: 5px;
+        font-style: italic;
+        font-size: 18px;
+        border: none;
+        height: 32px;
+        width: 260px;
+    }
+    
+    .dicas {
+        background: #f3efe8;
+        padding: 15px;
+    }
+    
+    .dicas .dicas-cards {
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .dicas .dicas-title {
+        width: 100%;
+        margin: 25px 0;
+        text-align: center;
+    }
+    
+    .dicas .card {
+        width: 250px;
+        height: 460px;
+        background: white;
+        border-radius: 24px 0px;
+        margin: 45px;
+        position: relative;
+    }
+    
+    .dicas .card-imag {
+        width: 225px;
+        height: 200px;
+        border-radius: 24px 0 0 0;
+        object-fit: cover;
+    }
+    
+    .dicas .card-content {
+        padding: 0 15px;
+    }
+    
+    .dicas .card-content ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 0;
+    }
+    
+    .dicas .card-content ul li {
+        font-size: 0.8em;
+        display: flex;
+        align-items: center;
+        margin: 3px 0;
+        color: gray;
+        font-weight: bold;
+    }
+    
+    .dicas .card-content li svg {
+        width: 18px;
+        height: 18px;
+        margin-right: 10px;
+    }
+    
+    .dicas .card-content h2 {
+        font-size: 1em;
+    }
+    
+    .dicas .card .card-tag-top {
+        position: absolute;
+        right: 0;
+        top: 15px;
+        background: #F5DCA6;
+        border-radius: 8px 0 0 8px;
+        padding: 5px 10px;
+    }
+    
+    .dicas .card .card-tag-bottom {
+        position: absolute;
+        left: 0;
+        top: 160px;
+        background: #A76D60;
+        border-radius: 0 8px 8px 0;
+        padding: 5px 10px;
+    }
+    
+    .dicas .card .card-tag p {
+        margin: 0;
+        font-size: .8em;
+        color: white;
+        font-weight: bold;
+    }
+    
+    .card-imag {
+        width: 300px;
+        height: 150px;
+        display: flex;
+        margin: 10px;
+        border-radius: 30px;
+    }
+    
+    .card-artigo .card-scroll {
+        display: flex;
+        margin-left: 10px;
+        justify-content: flex-start;
+        overflow-x: scroll;
+    }
+    
+    *::-webkit-scrollbar {
+        width: 3px;
+    }
+    
+    *::-webkit-scrollbar-track {
+        background: #ffffff;
+    }
+    
+    *::-webkit-scrollbar-thumb {
+        background-color: #f1eee5;
+        border-radius: 10px;
+        border: 5px solid #ffffff;
+    }
+    
+    .golpes {
+        padding: 15px;
+    }
+    
+    .golpes .golpes-title {
+        text-align: center;
+        margin: 10px 0;
+    }
+    
+    .golpes .golpes-cards {
+        padding: 25px;
+        display: flex;
+        max-width: 950px;
+        justify-content: center;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    
     .golpes .card {
+        width: 550px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         margin: 0 25px 50px;
     }
-    .golpes .card .card-content {
-        height: 350px;
-    }
-    main {
+    
+    .golpes .card svg {
+        width: 60px;
+        height: 60px;
         margin: 10px;
-        width: 360px;
+        transition: all 1s;
     }
-    .input-padrao {
-        width: 50%;
-        padding: 10px 150px;
+    
+    .golpes .card svg:hover {
+        stroke: #F5DCA6;
+        transform: scale(1.1);
     }
-    .enviar {
-        width: 30%;
+    
+    .golpes .card h3 {
+        font-weight: bold;
     }
+    
+    .golpes .card p {
+        font-size: .8rem;
+        color: #601700;
+        text-align: center;
+    }
+    
+    .golpes .card .card-content {
+        height: 180px;
+        text-align: center;
+    }
+    
+    .contato {
+        padding: 60px;
+        background: #f3efe8;
+        position: relative;
+    }
+    
+    .contato .contato-card {
+        width: 300px;
+        height: 300px;
+        background: white;
+        position: absolute;
+        z-index: 99;
+        top: calc(50% - 150px);
+        left: calc(20% - 175px);
+        border-radius: 8px;
+        text-align: center;
+        color: rgba(26, 77, 168, 0.57);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    }
+    
+    .contato .contato-card h4 {
+        padding-left: 50px;
+        text-align: left;
+    }
+    
+    .contato .contato-card li {
+        font-size: .9rem;
+        font-weight: bold;
+        color: rgba(26, 77, 168, 0.57);
+        display: flex;
+        align-items: center;
+    }
+    
+    .contato .contato-card li svg {
+        width: 16px;
+        margin: 10px;
+    }
+    /*Página envio*/
+    
+    main {
+        width: 940px;
+        margin: 0 auto;
+    }
+    
+    form {
+        margin: 40px 0;
+    }
+    
     .envio {
         display: flex;
         justify-content: center;
-        margin: 20px;
-        font-size: 25px;
     }
-    .dicas-p {
-        width: 350px;
+    
+    form label,
+    form legend {
+        display: block;
+        font-size: 20px;
+        margin: 0 0 10px;
     }
-    .card-dicas {
+    
+    .input-padrao {
+        display: block;
+        margin: 0 0 20px;
+        padding: 10px 25px;
+        width: 50%;
+    }
+    
+    .enviar {
+        width: 15%;
+        padding: 15px 0;
+        margin: 25px 0 25px;
+        background: #F5DCA6;
+        color: #000000;
+        font-weight: bold;
+        font-size: 18px;
+        border: none;
+        border-radius: 15px;
+        transition: 1s all;
+        cursor: pointer;
+    }
+    /*Página Comentarios*/
+    
+    .golpes-comentario {
+        padding: 25px;
         display: flex;
-        margin: 25px;
-        flex-direction: column;
+        max-width: 950px;
+        justify-content: center;
+        margin: auto;
         flex-wrap: wrap;
+    }
+    
+    .card-golpes {
+        width: 900px;
+        height: 450px;
+        border-radius: 20px 20px 0 0;
+    }
+    
+    #p-principal {
+        margin: 0 0 25px 0;
+        font-size: 20px;
+    }
+    
+    .comentario .card-c {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 5px 100px;
+    }
+    /*Página Dicas*/
+    
+    .pagina-dicas {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
     }
-    /*@media (min-width: 768px) and (max-width: 979px) { ... }
+    
+    .dicas-imag {
+        width: 300px;
+        right: 500px;
+        margin: 30px;
+    }
+    
+    .card-dicas {
+        margin: 25px;
+    }
+    
+    .dicas-p {
+        width: 400px;
+    }
+    
+    .dicas-b {
+        margin: 25px 125px;
+    }
+    
+    h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    /*RESPONSIVIDADE*/
+    /*Especial para mapa*/
+    
+    @media (max-width: 950px) {
+        .contato {
+            padding: 60px 0;
+        }
+        .contato .contato-card {
+            left: 40px;
+        }
+    }
+    
+    @media (max-width: 800px) {
+        .contato {
+            padding: 30px 0;
+        }
+        .contato .contato-card {
+            position: static;
+            margin: 40px auto;
+        }
+    }
+    /*Tablets*/
+    
+    @media (max-width: 767px) {
+        header {}
+        .header-content h1 {
+            font-size: 100%;
+        }
+    }
+    /*Celular*/
+    
+    @media (max-width: 480px) {
+        body {
+            padding: auto;
+        }
+        header {
+            height: 210px;
+            border-radius: 0 60px;
+        }
+        .header-content h1 {
+            font-size: 100%;
+            margin: 20px 0 10px;
+        }
+        .card-imag {
+            width: 200px;
+            height: 100px;
+        }
+        header nav {
+            margin: 0;
+        }
+        header nav ul {
+            padding: 0px;
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        header nav ul li {
+            margin: 5px;
+            background: #C7DBFF;
+            border-radius: 20px;
+            padding: 15px;
+            color: #000000;
+            font-size: 17px;
+            padding: 3px;
+        }
+        header nav p {
+            width: 100%;
+            text-align: center;
+        }
+        #divBusca {
+            position: absolute;
+            margin: 60px 40px;
+            width: 300px;
+            height: 25px;
+        }
+        .golpes .card {
+            margin: 0 25px 50px;
+        }
+        .golpes .card .card-content {
+            height: 350px;
+        }
+        main {
+            margin: 10px;
+            width: 360px;
+        }
+        .input-padrao {
+            width: 50%;
+            padding: 10px 150px;
+        }
+        .enviar {
+            width: 30%;
+        }
+        .envio {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            font-size: 25px;
+        }
+        .dicas-p {
+            width: 350px;
+        }
+        .card-dicas {
+            display: flex;
+            margin: 25px;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .card-golpes {
+            width: 350px;
+            height: 200px;
+            border-radius: 20px 20px 0 0;
+        }
+        /*@media (min-width: 768px) and (max-width: 979px) { ... }
 
 @media (min-width: 1200px) { ... }*/
