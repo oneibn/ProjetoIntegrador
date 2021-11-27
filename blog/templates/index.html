@@ -9,7 +9,8 @@
 
     <title>Golpes digitais</title>
     <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="stylesheet" href="styles.css">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'blog/styles.css' %}">
 
 </head>
 
@@ -17,10 +18,10 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="envio.html">Envios</a></li>
-                <li><a href="comentarios.html">Comentários</a></li>
-                <li><a href="dicas.html">Dicas</a></li>
+                <li><a href="index">Home</a></li>
+                <li><a href="envio">Envios</a></li>
+                <li><a href="comentarios">Comentários</a></li>
+                <li><a href="dicas">Dicas</a></li>
                 <li><a href="#sobre">Sobre</a></li>
             </ul>
 
@@ -35,29 +36,29 @@
         <div id="home" class="header-content">
             <h1>Vulnerabilidade digital</h1>
             <p>Vanha se informar.</p>
-            <button><a href="comentarios.html">Saiba mais</a></button>
+            <button><a href="comentarios">Saiba mais</a></button>
         </div>
     </header>
 
     <section id="card-artigo" class="card-artigo">
         <div id="home-card" class="card-scroll">
             <div class="card">
-                <a href="Artigo1"><img class="card-imag" src="Artigo1.jpg" alt="Artigo"></a>
+                <a href="Artigo1"><img class="card-imag" src="{% static 'blog/Artigo1.jpg' %}" alt="Artigo"></a>
             </div>
             <div class="card">
-                <a href="Artigo2"><img class="card-imag" src="Artigo2.png" alt="Artigo"></a>
+                <a href="Artigo2"><img class="card-imag" src="{% static 'blog/Artigo2.png' %}" alt="Artigo"></a>
             </div>
             <div class="card">
-                <a href="Artigo3"><img class="card-imag" src="Artigo3.png" alt="Artigo"></a>
+                <a href="Artigo3"><img class="card-imag" src="{% static 'blog/Artigo3.png' %}" alt="Artigo"></a>
             </div>
             <div class="card">
-                <a href="Artigo4"><img class="card-imag" src="Artigo4.png" alt="Artigo"></a>
+                <a href="Artigo4"><img class="card-imag" src="{% static 'blog/Artigo4.png' %}" alt="Artigo"></a>
             </div>
             <div class="card">
-                <a href="Artigo5"><img class="card-imag" src="Artigo5.jpg" alt="Artigo"></a>
+                <a href="Artigo5"><img class="card-imag" src="{% static 'blog/Artigo5.jpg' %}" alt="Artigo"></a>
             </div>
             <div class="card">
-                <a href="Artigo6"><img class="card-imag" src="Artigo6.jpg" alt="Artigo"></a>
+                <a href="Artigo6"><img class="card-imag" src="{% static 'blog/Artigo6.jpg' %}" alt="Artigo"></a>
             </div>
         </div>
     </section>
@@ -74,13 +75,13 @@
                     <p>Dicas</p>
                 </div>
 
-                <img class="card-imag" src="lgpd.png" alt="miami">
+                <img class="card-imag" src="{% static 'blog/lgpd.png' %}" alt="miami">
 
                 <div class="card-content">
                     <h2>Novos golpes aplicados pela internet</h2>
                     <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget...</p>
 
-                    <button><a href="dicas.html">Saiba mais</a></button>
+                    <button><a href="dicas">Saiba mais</a></button>
 
                 </div>
 
@@ -91,13 +92,13 @@
                     <p>Dicas</p>
                 </div>
 
-                <img class="card-imag" src="seguranca.jpg" alt="russia">
+                <img class="card-imag" src="{% static 'blog/seguranca.jpg' %}" alt="russia">
 
                 <div class="card-content">
                     <h2>Novos golpes aplicados pela internet</h2>
                     <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget...</p>
 
-                    <button><a href="dicas.html">Saiba mais</a></button>
+                    <button><a href="dicas">Saiba mais</a></button>
 
                 </div>
 
@@ -108,13 +109,13 @@
                     <p>Dicas</p>
                 </div>
 
-                <img class="card-imag" src="lgpd2.png" alt="Lençóis Maranhenses">
+                <img class="card-imag" src="{% static 'blog/lgpd2.png' %}" alt="Lençóis Maranhenses">
 
                 <div class="card-content">
                     <h2>Novos golpes aplicados pela internet</h2>
                     <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget...</p>
 
-                    <button><a href="dicas.html">Saiba mais</a></button>
+                    <button><a href="dicas">Saiba mais</a></button>
 
                 </div>
             </div>
@@ -132,7 +133,7 @@
                         excepteur. Magna dis magni quasi egestas, repudiandae doloribus maxime minima. Repellat natus venenatis eget fugiat lectus. Aliquet tincidunt netus reiciendis occaecat laoreet? Taciti hac? Aspernatur, ultricies, eu consectetuer,
                         non proin ducimus similique duis, diamlorem, parturient ipsam? </p>
                 </div>
-                <button><a href="comentarios.html">Saiba mais</a></button>
+                <button><a href="comentarios">Saiba mais</a></button>
             </div>
 
             <div class="card">
@@ -143,7 +144,7 @@
                         excepteur. Magna dis magni quasi egestas, repudiandae doloribus maxime minima. Repellat natus venenatis eget fugiat lectus. Aliquet tincidunt netus reiciendis occaecat laoreet? Taciti hac? Aspernatur, ultricies, eu consectetuer,
                         non proin ducimus similique duis, diamlorem, parturient ipsam? </p>
                 </div>
-                <button><a href="comentarios.html">Saiba mais</a></button>
+                <button><a href="comentarios">Saiba mais</a></button>
             </div>
 
             <div class="card">
@@ -154,7 +155,7 @@
                         excepteur. Magna dis magni quasi egestas, repudiandae doloribus maxime minima. Repellat natus venenatis eget fugiat lectus. Aliquet tincidunt netus reiciendis occaecat laoreet? Taciti hac? Aspernatur, ultricies, eu consectetuer,
                         non proin ducimus similique duis, diamlorem, parturient ipsam? </p>
                 </div>
-                <button><a href="comentarios.html">Saiba mais</a></button>
+                <button><a href="comentarios">Saiba mais</a></button>
             </div>
         </div>
 
