@@ -18,16 +18,16 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index">Home</a></li>
-                <li><a href="envio">Envios</a></li>
-                <li><a href="comentarios">Comentários</a></li>
-                <li><a href="dicas">Dicas</a></li>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'envio' %}">Envios</a></li>
+                <li><a href="{% url 'comentarios' %}">Comentários</a></li>
+                <li><a href="{% url 'dicas' %}">Dicas</a></li>
                 <li><a href="#sobre">Sobre</a></li>
             </ul>
 
             <div id="divBusca">
                 <input type="text" id="txtBusca" placeholder="Buscar..." />
-                <img src="search.png" id="btnBusca" alt="Buscar" />
+                <img src="{% static 'blog/search.png' %}" id="btnBusca" alt="Buscar" />
             </div>
         </nav>
 
@@ -36,7 +36,7 @@
         <div id="home" class="header-content">
             <h1>Vulnerabilidade digital</h1>
             <p>Vanha se informar.</p>
-            <button><a href="comentarios">Saiba mais</a></button>
+            <button><a href="{% url 'comentarios' %}">Saiba mais</a></button>
         </div>
     </header>
 
@@ -81,7 +81,7 @@
                     <h2>Novos golpes aplicados pela internet</h2>
                     <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget...</p>
 
-                    <button><a href="dicas">Saiba mais</a></button>
+                    <button><a href="{% url 'dicas' %}">Saiba mais</a></button>
 
                 </div>
 
@@ -98,7 +98,7 @@
                     <h2>Novos golpes aplicados pela internet</h2>
                     <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget...</p>
 
-                    <button><a href="dicas">Saiba mais</a></button>
+                    <button><a href="{% url 'dicas' %}">Saiba mais</a></button>
 
                 </div>
 
@@ -115,7 +115,7 @@
                     <h2>Novos golpes aplicados pela internet</h2>
                     <p>Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget...</p>
 
-                    <button><a href="dicas">Saiba mais</a></button>
+                    <button><a href="{% url 'dicas' %}">Saiba mais</a></button>
 
                 </div>
             </div>
@@ -153,7 +153,7 @@
                         excepteur. Magna dis magni quasi egestas, repudiandae doloribus maxime minima. Repellat natus venenatis eget fugiat lectus. Aliquet tincidunt netus reiciendis occaecat laoreet? Taciti hac? Aspernatur, ultricies, eu consectetuer,
                         non proin ducimus similique duis, diamlorem, parturient ipsam? </p>
                 </div>
-                <button><a href="comentarios">Saiba mais</a></button>
+                <button><a href="{% url 'comentarios' %}">Saiba mais</a></button>
             </div>
         </div>
 

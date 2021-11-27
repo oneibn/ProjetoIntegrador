@@ -17,16 +17,16 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index">Home</a></li>
-                <li><a href="envio">Envios</a></li>
-                <li><a href="comentarios">Comentários</a></li>
-                <li><a href="dicas">Dicas</a></li>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'envio' %}">Envios</a></li>
+                <li><a href="{% url 'comentarios' %}">Comentários</a></li>
+                <li><a href="{% url 'dicas' %}">Dicas</a></li>
                 <li><a href="#sobre">Sobre</a></li>
             </ul>
 
             <div id="divBusca">
                 <input type="text" id="txtBusca" placeholder="Buscar..." />
-                <img src="{% static 'blog/search.png %}" id="btnBusca" alt="Buscar" />
+                <img src="{% static 'blog/search.png' %}" id="btnBusca" alt="Buscar" />
             </div>
         </nav>
 
@@ -35,7 +35,7 @@
         <div id="home" class="header-content">
             <h1>Vulnerabilidade digital</h1>
             <p>Vanha se informar.</p>
-            <button><a href="comentarios">Saiba mais</a></button>
+            <button><a href="{% url 'comentarios' %}">Saiba mais</a></button>
 
     </header>
 
