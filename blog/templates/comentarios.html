@@ -26,7 +26,7 @@
 
             <div id="divBusca">
                 <input type="text" id="txtBusca" placeholder="Buscar..." />
-                <img src="search.png" id="btnBusca" alt="Buscar" />
+                <img src="{% static 'blog/search.png %}" id="btnBusca" alt="Buscar" />
             </div>
         </nav>
 
@@ -35,29 +35,29 @@
         <div id="home" class="header-content">
             <h1>Vulnerabilidade digital</h1>
             <p>Vanha se informar.</p>
-            <button><a href="comentarios.html">Saiba mais</a></button>
+            <button><a href="comentarios">Saiba mais</a></button>
 
     </header>
 
     <section id="card-artigo" class="card-artigo">
         <div id="home-card" class="card-scroll">
             <div class="card">
-                <a href="Artigo1"><img class="card-imag" src="{{blog}}templates/Artigo1.jpg" alt="Artigo"></a>
+                <a href="Artigo1"><img class="card-imag" src="{% static 'blog/Artigo1.jpg' %}" alt="Artigo"></a>
             </div>
             <div class="card">
-                <a href="Artigo2"><img class="card-imag" src="Artigo2.png" alt="Artigo"></a>
+                <a href="Artigo2"><img class="card-imag" src="{% static 'blog/Artigo2.png' %}" alt="Artigo"></a>
             </div>
             <div class="card">
-                <a href="Artigo3"><img class="card-imag" src="Artigo3.png" alt="Artigo"></a>
+                <a href="Artigo3"><img class="card-imag" src="{% static 'blog/Artigo3.png' %}" alt="Artigo"></a>
             </div>
             <div class="card">
-                <a href="Artigo4"><img class="card-imag" src="Artigo4.png" alt="Artigo"></a>
+                <a href="Artigo4"><img class="card-imag" src="{% static 'blog/Artigo4.png' %}" alt="Artigo"></a>
             </div>
             <div class="card">
-                <a href="Artigo5"><img class="card-imag" src="Artigo5.jpg" alt="Artigo"></a>
+                <a href="Artigo5"><img class="card-imag" src="{% static 'blog/Artigo5.jpg' %}" alt="Artigo"></a>
             </div>
             <div class="card">
-                <a href="Artigo6"><img class="card-imag" src="Artigo6.jpg" alt="Artigo"></a>
+                <a href="Artigo6"><img class="card-imag" src="{% static 'blog/Artigo6.jpg' %}" alt="Artigo"></a>
             </div>
         </div>
     </section>
@@ -66,7 +66,7 @@
         <h1 class="envio">Comentários recentes.</h1>
         <div class="golpes-comentario">
             <div class="card-c">
-                <img class="card-golpes" src="Artigo6.jpg" alt="Artigo">
+                <img class="card-golpes" src="{% static 'blog/Artigo6.jpg' %}" alt="Artigo">
                 <div class="card-content">
                     <h2>Novos golpes aplicados pela internet</h2>
                     <p id="p-principal">Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget, sodales tellus eveniet possimus. Iure dolorum lectus varius ipsum repudiandae! Iure congue
@@ -77,7 +77,7 @@
             </div>
 
             <div class="card-c">
-                <img class="card-golpes" src="Artigo6.jpg" alt="Artigo">
+                <img class="card-golpes" src="{% static 'blog/Artigo6.jpg' %}" alt="Artigo">
                 <div class="card-content">
                     <h2>Novos golpes aplicados pela internet</h2>
                     <p id="p-principal">Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget, sodales tellus eveniet possimus. Iure dolorum lectus varius ipsum repudiandae! Iure congue
@@ -88,7 +88,7 @@
             </div>
 
             <div class="card-c">
-                <img class="card-golpes" src="Artigo6.jpg" alt="Artigo">
+                <img class="card-golpes" src="{% static 'blog/Artigo6.jpg' %}" alt="Artigo">
                 <div class="card-content">
                     <h2>Novos golpes aplicados pela internet</h2>
                     <p id="p-principal">Tosuere minim, porttitor suspendisse. Accusantium delectus amet urna! Dictum voluptas posuere tincidunt, commodi morbi sapiente viverra dui eget, sodales tellus eveniet possimus. Iure dolorum lectus varius ipsum repudiandae! Iure congue
