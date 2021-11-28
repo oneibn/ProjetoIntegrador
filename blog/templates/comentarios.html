@@ -23,11 +23,11 @@
                 <li><a href="{% url 'dicas' %}">Dicas</a></li>
                 <li><a href="#sobre">Sobre</a></li>
             </ul>
-<!--             
+            
             <div id="divBusca">
-                <input type="text" id="txtBusca" placeholder="Buscar..." />
-                <img src="{% static 'blog/search.png' %}" id="btnBusca" alt="Buscar" />
-            </div> -->
+                <!-- <input type="text" id="txtBusca" placeholder="Buscar..." />
+                <img src="{% static 'blog/search.png' %}" id="btnBusca" alt="Buscar" /> -->
+            </div> 
         </nav>
 
 
@@ -61,6 +61,18 @@
             </div>
         </div>
     </section>
+
+    <!-- Essa seção comentários é só um esboço de como ficaria, pois como não obtivemos comentários
+descritivos dos problemas enfrentados não foi possivel formar um banco de dados explicativo, e 
+com isso o sistema de pesquisa foi desativado para acessar o banco de dados será utilizado: 
+
+Para abrir e fechar a requisição ao django:
+
+{% for post in posts %}
+{% endfor %} 
+
+e acessando os dados utilizando {{ post.DATA }}, onde DATA seria o dado a ser acessado
+podendo até aplicar um algorítimo usando foreach-->
 
     <section id="comentario" class="comentario">
         <h1 class="envio">Comentários recentes.</h1>
