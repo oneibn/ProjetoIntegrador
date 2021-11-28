@@ -24,10 +24,10 @@
                 <li><a href="#sobre">Sobre</a></li>
             </ul>
 
-            <div id="divBusca">
+            <!-- <div id="divBusca">
                 <input type="text" id="txtBusca" placeholder="Buscar..." />
                 <img src="{% static 'blog/search.png' %}" id="btnBusca" alt="Buscar" />
-            </div>
+            </div> -->
         </nav>
 
 
@@ -67,18 +67,19 @@
         </h1>
 
         <main>
-            <form action="enviarCaso" method="post">
+            <form action="{% url 'envio' %}" method="post">
+                {% csrf_token %}
                 <label for="nomesobrenome">Nome e sobrenome</label>
-                <input type="text" id="nomesobrenome" class="input-padrao" required>
+                <input type="text" id="nomesobrenome" name="nomesobrenome" class="input-padrao" required>
 
                 <label for="email">Email</label>
-                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+                <input type="email" id="email" name="email" class="input-padrao" required placeholder="seuemail@dominio.com">
 
                 <label for="telefone">Assunto</label>
-                <input type="tel" id="assunto" class="input-padrao" required>
+                <input type="tel" id="assunto" name="telefone" class="input-padrao" required>
 
                 <label for="mensagem">Mensagem</label>
-                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+                <textarea cols="70" rows="10" name="mensagem" id="mensagem" class="input-padrao" required></textarea>
 
                 <input type="submit" value="Enviar" class="enviar">
             </form>
